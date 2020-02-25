@@ -19,6 +19,7 @@ public class TestesCondominioApplicationTest {
   String tenis = "tenis";
   String gourmet = "gourmet";
   String festas = "festas";
+  
   LoginSteps loginSteps = new LoginSteps(driver);
   HomeSteps homeSteps = new HomeSteps(driver);
   FacilitiesSteps facilitiesSteps = new FacilitiesSteps(driver);
