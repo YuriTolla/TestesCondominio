@@ -1,8 +1,10 @@
 # TestesCondominio
 
   Projeto desenvolvido para TownSQ com intuito de testar uma nova feature chamada "fila de espera".
+  
   O projeto foi elaborado via BDD, acessando o arquivo "BDD Town.txt", dá para visualizar os casos de testes utilizados no projeto.
-Para rodá-lo, deve-se inicialmente ter o Java 11 instalado, após a instalção, deve-se acessar a classe TestesCondominioApplicationTest na pasta src/test/java e dar Run na classe para rodar todos os testes ou rodar um teste escolhido dentro da própria classe.
+
+  Para rodá-lo, deve-se inicialmente ter o Java 11 instalado, após a instalção, deve-se acessar a classe TestesCondominioApplicationTest na pasta src/test/java e dar Run na classe para rodar todos os testes ou rodar um teste escolhido dentro da própria classe.
   O projeto conta com log na pasta log4j, basta acessar o arquivo log.out.
 
 1. para o problema acima,
