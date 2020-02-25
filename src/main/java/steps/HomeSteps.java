@@ -6,7 +6,7 @@ import utils.SeleniumUtils;
 
 public class HomeSteps extends SeleniumUtils {
 
-  public HomeSteps(WebDriver driver){
+  public HomeSteps(WebDriver driver) {
     this.driver = driver;
   }
 

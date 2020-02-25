@@ -27,19 +27,22 @@ public class ReservationSteps extends SeleniumUtils {
   public boolean validaReserva() throws InterruptedException {
     return reservationPage.validaReserva();
   }
-  public void entrarFilaDeEspera() throws InterruptedException{
+
+  public void entrarFilaDeEspera() throws InterruptedException {
     reservationPage.entrarFilaDeEspera();
   }
-  public void sairLayoutFilaEspera() throws InterruptedException{
+
+  public void sairLayoutFilaEspera() throws InterruptedException {
     reservationPage.sairLayoutFilaEspera();
   }
-  public boolean confirmaFila() throws  InterruptedException {
+
+  public boolean confirmaFila() throws InterruptedException {
     return reservationPage.confirmaFila();
   }
-  public void sairFilaEspera() throws InterruptedException{
+
+  public void sairFilaEspera() throws InterruptedException {
     reservationPage.sairFilaEspera();
   }
-
 
 
 }

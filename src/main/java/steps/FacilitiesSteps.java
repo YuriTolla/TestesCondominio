@@ -6,14 +6,14 @@ import utils.SeleniumUtils;
 
 public class FacilitiesSteps extends SeleniumUtils {
 
-    public FacilitiesSteps(WebDriver driver){
-      this.driver = driver;
-    }
+  public FacilitiesSteps(WebDriver driver) {
+    this.driver = driver;
+  }
 
-    FacilitiesPage facilitiesPage = new FacilitiesPage();
+  FacilitiesPage facilitiesPage = new FacilitiesPage();
 
-    public void acessoDependencia(String dependencia) throws InterruptedException {
-      facilitiesPage.acessoDependencia(dependencia);
-    }
+  public void acessoDependencia(String dependencia) throws InterruptedException {
+    facilitiesPage.acessoDependencia(dependencia);
+  }
 
 }

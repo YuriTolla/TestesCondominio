@@ -12,7 +12,7 @@ public class HomePage extends SeleniumUtils {
     WebElement campoReservas = driver
         .findElement(By.cssSelector("#menu-reservations > tsq-menu-group > div > div > span"));
     campoReservas.click();
-System.out.println("Acessando sub modulo dependencias");
+    System.out.println("Acessando sub modulo dependencias");
     WebElement campoDependencias = driver.findElement(By.cssSelector("#menu-amenities"));
     wait(2);
     campoDependencias.click();

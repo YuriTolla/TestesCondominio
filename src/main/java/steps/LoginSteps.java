@@ -6,13 +6,13 @@ import utils.SeleniumUtils;
 
 public class LoginSteps extends SeleniumUtils {
 
-  public LoginSteps(WebDriver driver){
+  public LoginSteps(WebDriver driver) {
     this.driver = driver;
-}
+  }
 
   LoginPage loginPage = new LoginPage();
 
-  public void acessoTelaLogin(){
+  public void acessoTelaLogin() {
     loginPage.acessoLoginPortal();
   }
 
