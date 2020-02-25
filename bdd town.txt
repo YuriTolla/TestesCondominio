@@ -1,0 +1,93 @@
+Funcionalidade: Gerar reserva
+  Eu como usuario, desejo gerar uma reserva
+  Para que meu horario seja exclusivo
+
+Contexto: 
+ Dado que estando na tela de login 
+
+@nova_reserva
+Esquema do cenario : Gerar uma nova reserva para produto <produtos>
+  Quando realizo login com dados validos
+    | usuario                     | senha  |
+    |yuri.tolla.ps1@townsq.com.br | yuri123|
+  E acesso ao modulo "dependencias" dentro do submenu "reservas"
+  E gero uma reserva para produto <produtos>
+  Entao a reserva sera gerada com sucesso
+  Exemplos:
+    | produtos        |
+    | Espaço Gourmet  |
+    | Quadra de Tênis |
+    | Salão de Festas |
+
+@valida_reserva
+Esquema do cenario: validar que um usuario não consiga realizar uma reserva ao escolher 
+data e horario para o produto <produtos> já reservado por outro usuario.
+  Quando realizo login com dados validos
+    | usuario                     | senha  |
+    |yuri.tolla.ps1@townsq.com.br | yuri123|
+  E acesso ao modulo "dependencias" dentro do submenu "reservas"
+  E gero uma reserva para produto <produtos>
+  E valido a geração da proposta
+  E retorno a tela de login
+  E realizo login com dados validos
+    | usuario                     | senha  |
+    |yuri.tolla.ps2@townsq.com.br | yuri123|
+  E tentar realizar a reserva no mesmo horario e data do mesmo produto <produtos>
+  Então não será realizada a reserva e irá mostrar na tela o aviso "reservado".
+  Exemplos:
+    | produtos        |
+    | Espaço Gourmet  |
+    | Quadra de Tênis |
+    | Salão de Festas |
+
+@gerar_fila_espera
+Esquema do cenario: validar que um usuario consiga entrar na fila de espera.
+   Quando realizo login com dados validos
+    | usuario                     | senha  |
+    |yuri.tolla.ps1@townsq.com.br | yuri123|
+  E acesso ao modulo "dependencias" dentro do submenu "reservas"
+  E gero uma reserva para produto <produtos>
+  E valido a geração da proposta
+  E retorno a tela de login
+  E realizo login com dados validos
+    | usuario                     | senha  |
+    |yuri.tolla.ps2@townsq.com.br | yuri123|
+  E tentar realizar a reserva no mesmo horario e data do mesmo produto <produtos>
+  Então o usuario vai se cadastrar na fila de espera.
+   Exemplos:
+    | produtos        |
+    | Espaço Gourmet  |
+    | Quadra de Tênis |
+    | Salão de Festas |
+
+@confirmar_fila_espera
+Esquema do cenario: validar que um usuario consiga confirmar fila de espera
+ após o outro usuario cancelar sua reserva.
+   Quando realizo login com dados validos
+    | usuario                     | senha  |
+    |yuri.tolla.ps1@townsq.com.br | yuri123|
+  E acesso ao modulo "dependencias" dentro do submenu "reservas"
+  E gero uma reserva para produto <produtos>
+  E valido a geração da proposta
+  E retorno a tela de login
+  E realizo login com dados validos
+    | usuario                     | senha  |
+    |yuri.tolla.ps2@townsq.com.br | yuri123|
+  E tentar realizar a reserva no mesmo horario e data do mesmo produto <produtos>
+  E o usuario vai se cadastrar na fila de espera.
+  E retorno a tela de login com dados validos
+   Quando realizo login com dados validos
+    | usuario                     | senha  |
+    |yuri.tolla.ps1@townsq.com.br | yuri123|
+  E cancelo a reserva
+  E retorno a tela de login 
+  E realizo login com dados validos
+    | usuario                     | senha  |
+    |yuri.tolla.ps2@townsq.com.br | yuri123|
+  Então confirmo a fila de espera
+   Exemplos:
+    | produtos        |
+    | Espaço Gourmet  |
+    | Quadra de Tênis |
+    | Salão de Festas |
+
