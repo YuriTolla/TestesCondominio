@@ -1,0 +1,9 @@
+steps\LoginSteps.class
+steps\FacilitiesSteps.class
+page\HomePage.class
+page\ReservationsPage.class
+utils\SeleniumUtils.class
+page\FacilitiesPage.class
+steps\HomeSteps.class
+page\LoginPage.class
+TestesCondominioApplication.class
