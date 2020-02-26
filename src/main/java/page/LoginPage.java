@@ -46,7 +46,7 @@ public class LoginPage extends SeleniumUtils {
     } else {
       System.out.println("Não foi possível localizar botão sair");
     }
-
+ 
     campoDeslogar.click();
     wait(2);
 
