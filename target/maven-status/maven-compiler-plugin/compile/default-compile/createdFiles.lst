@@ -1,4 +1,4 @@
-steps\LoginSteps.class
+steps\LoginSteps.class 
 steps\FacilitiesSteps.class
 page\HomePage.class
 page\ReservationsPage.class
