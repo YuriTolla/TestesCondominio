@@ -4,7 +4,7 @@
   
   O projeto foi elaborado via BDD, acessando o arquivo "BDD Town.txt", dá para visualizar os casos de testes utilizados no projeto.
 
-  Para rodá-lo, deve-se inicialmente ter o Java 11 instalado, após a instalção, deve-se acessar a classe TestesCondominioApplicationTest na pasta src/test/java e dar Run na classe para rodar todos os testes ou rodar um teste escolhido dentro da própria classe.
+  Para rodá-lo, deve-se inicialmente ter o Java 11 e o Chrome instalados, após as instalações, deve-se acessar a classe TestesCondominioApplicationTest na pasta src/test/java e dar Run na classe para rodar todos os testes ou rodar um teste escolhido dentro da própria classe.
   O projeto conta com log na pasta log4j, basta acessar o arquivo log.out.
 
 1. para o problema acima,
@@ -26,7 +26,7 @@ escolheu, funcionalidades que você testou, critérios que você utilizou para t
 
 - ferramentas que você utilizou ?
   
-  Foi utilizada a linguagem gherkin para criar os cenários, foi utilizado selenium para desenvolver os testes automatizados e o log4j para gerar os logs.
+  Foi utilizada a linguagem gherkin para criar os cenários, foi utilizado selenium para desenvolver os testes automatizados, Junit para validar os testes e o log4j para gerar os logs.
 - caso opte por escrever testes automatizados, que tecnologias que você escolheu?
   
   Respondido na pergunta acima, foi utilizado selenium em Java.
